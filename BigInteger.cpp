@@ -273,7 +273,7 @@ int compare (BigInteger ab,BigInteger bb)
         ab.a.push_back(0);
     for (unsigned int i=0; i<size-bb.a.size(); i++)
         bb.a.push_back(0);
-    for (unsigned int i=size-1; i>=0; i--)
+    for (int i=size-1; i>=0; i--)
     {
         if (ab.a[i]>bb.a[i]) return 1;
         if (ab.a[i]<bb.a[i]) return -1;
